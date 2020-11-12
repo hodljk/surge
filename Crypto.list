@@ -4,5 +4,6 @@ DOMAIN,api.blockset.com
 DOMAIN,api.coingecko.com
 # Binance
 DOMAIN-KEYWORD,binance
+DOMAIN,bin.bnbstatic.com
 # Crypto Pro
 DOMAIN-SUFFIX,cryptopro.app
