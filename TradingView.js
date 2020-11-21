@@ -10,5 +10,5 @@ obj.avatars.["mid"] = "";
 obj.avatars.["big"] = "";
 obj.avatars.["small"] = "";
 obj.avatars.["orig"] = null;
-obj.badgets = ["name":"pro:pro_premium_trial","verbose_name":"Premium试用"]
+obj.badgets = "name":"pro:pro_premium_trial","verbose_name":"Premium试用"
 $done({body: JSON.stringify(obj)});
