@@ -6,3 +6,5 @@ DOMAIN,api.coingecko.com
 DOMAIN-KEYWORD,binance
 # Crypto Pro
 DOMAIN-SUFFIX,cryptopro.app
+# TradingView
+DOMAIN-KEYWORD,tradingview
