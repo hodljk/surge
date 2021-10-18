@@ -8,6 +8,13 @@
   let total = info.total;
   let expire = args.expire || info.expire;
   let content = [`Usage：${bytesToSize(used)} | ${bytesToSize(total)}`];
+
+  if (resetDayLeft) {
+    content.push(`重置：剩余${resetDayLeft}天`);
+  }
+  if (expire) {
+    if (/^[\d]+$/.test(expire)) expire *= 1000;
+    content.push(`到期：${formatTime(expire)}`);
   }
 
   let now = new Date();
@@ -17,8 +24,10 @@
   minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
-    title: `${args.title}`,
+    title: `${args.title} | ${hour}:${minutes}`,
     content: content.join("\n"),
+    icon: args.icon || "airplane.circle",
+    "icon-color": args.color || "#007aff",
   });
 })();
 
