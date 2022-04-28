@@ -4,7 +4,9 @@ DOMAIN-SUFFIX,imap.gmail.com
 DOMAIN-SUFFIX,oauth2.googleapis.com
 DOMAIN-SUFFIX,firestore.googleapis.com
 DOMAIN-SUFFIX,s-usc1a-nss-2037.firebaseio.com
+DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
 DOMAIN-SUFFIX,fcmtoken.googleapis.com
+DOMAIN-SUFFIX,securetoken.googleapis.com
 DOMAIN-SUFFIX,imap.mail.yahoo.com
 DOMAIN-SUFFIX,api.login.yahoo.com
 DOMAIN-SUFFIX,mail.riseup.net
