@@ -12,6 +12,8 @@ DOMAIN-SUFFIX,aliyuncs.com
 DOMAIN-KEYWORD,alipay
 
 # Airstar Bank
-
+DOMAIN-SUFFIX,airstar.com
+DOMAIN-KEYWORD,airstar
+DOMAIN-SUFFIX,mi.com
 
 # WeLab Bank
