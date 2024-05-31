@@ -1,2 +1,12 @@
-DOMAIN-SUFFIX,ocbc.com
-DOMAIN-KEYWORD,ocbc
+# Livi Bank
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-KEYWORD,livibank
+DOMAIN-SUFFIX,branch.io
+
+# Ant Bank
+DOMAIN-SUFFIX,antbank.hk
+DOMAIN-KEYWORD,antbank
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-KEYWORD,alipay
