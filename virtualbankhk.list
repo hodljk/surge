@@ -1,3 +1,14 @@
+# ZA Bank
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,zajourney.com
+DOMAIN-SUFFIX,zafinsvc.com
+DOMAIN-SUFFIX,zaticdn.com
+
+# Fusion Bank
+DOMAIN-SUFFIX,fusionbank.com
+DOMAIN-KEYWORD,fusionbank
+DOMAIN-SUFFIX,tencent.com
+
 # Livi Bank
 DOMAIN-SUFFIX,livibank.com
 DOMAIN-KEYWORD,livibank
