@@ -33,6 +33,9 @@ DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,bntrace.com
 DOMAIN-SUFFIX,saasexch.com
 
+# Kraken
+DOMAIN-SUFFIX,kraken.com
+
 # Bybit
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.org
@@ -57,7 +60,6 @@ DOMAIN-SUFFIX,coinone.co.kr
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,gemini.com
 DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,kraken.com
 DOMAIN-SUFFIX,kucoin.com
 DOMAIN-SUFFIX,liquid.com
 DOMAIN-SUFFIX,okex.com
