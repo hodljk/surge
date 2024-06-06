@@ -35,6 +35,7 @@ DOMAIN-SUFFIX,saasexch.com
 
 # Kraken
 DOMAIN-SUFFIX,kraken.com
+DOMAIN-KEYWORD,kraken
 
 # Bybit
 DOMAIN-SUFFIX,bybit.com
