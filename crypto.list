@@ -33,6 +33,14 @@ DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,bntrace.com
 DOMAIN-SUFFIX,saasexch.com
 
+# Bybit
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.org
+DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,byabcde.com
+DOMAIN-SUFFIX,byd3c3.com
+
 # Exchange
 DOMAIN-KEYWORD,paxos
 DOMAIN-KEYWORD,nexo
@@ -43,8 +51,6 @@ DOMAIN-SUFFIX,bitstamp.net
 DOMAIN-SUFFIX,bittrex.com
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,bybit.com
-DOMAIN-SUFFIX,bybit.org
 DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coincheck.com
 DOMAIN-SUFFIX,coinone.co.kr
