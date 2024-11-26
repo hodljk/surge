@@ -4,10 +4,6 @@ DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-KEYWORD,chatgpt
 
-# CLAUDE
-DOMAIN-KEYWORD,anthropic.com
-DOMAIN-KEYWORD,claude.ai
-
 # PERPLEXITY
 DOMAIN-KEYWORD,perplexity.ai
 
