@@ -5,7 +5,7 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-KEYWORD,chatgpt
 
 # PERPLEXITY
-DOMAIN-KEYWORD,perplexity.ai
+DOMAIN-SUFFIX,perplexity.ai
 
 # COPILOT
-DOMAIN-KEYWORD,bing.com
+DOMAIN-SUFFIX,bing.com
