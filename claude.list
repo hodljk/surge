@@ -1,2 +1,7 @@
-DOMAIN-KEYWORD,anthropic.com
-DOMAIN-KEYWORD,claude.ai
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN-KEYWORD,claude
