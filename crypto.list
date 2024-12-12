@@ -37,6 +37,22 @@ DOMAIN-SUFFIX,saasexch.com
 DOMAIN-SUFFIX,kraken.com
 DOMAIN-KEYWORD,kraken
 
+# Nexo
+DOMAIN-SUFFIX,nexo.com
+DOMAIN-KEYWORD,nexo
+
+# OKX
+DOMAIN-SUFFIX,okx.com
+DOMAIN-KEYWORD,okx
+
+# HTX
+DOMAIN-SUFFIX,htx.com
+DOMAIN-KEYWORD,htx
+
+# Bitget
+DOMAIN-SUFFIX,bgportable.com
+DOMAIN-KEYWORD,bitget
+
 # Bybit
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.org
@@ -46,33 +62,13 @@ DOMAIN-SUFFIX,byabcde.com
 DOMAIN-SUFFIX,byd3c3.com
 
 # Exchange
-DOMAIN-KEYWORD,paxos
-DOMAIN-KEYWORD,nexo
 DOMAIN-SUFFIX,bitfinex.com
-DOMAIN-SUFFIX,bithumb.com
 DOMAIN-SUFFIX,bitmex.com
-DOMAIN-SUFFIX,bitstamp.net
-DOMAIN-SUFFIX,bittrex.com
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,coinbase.com
-DOMAIN-SUFFIX,coincheck.com
-DOMAIN-SUFFIX,coinone.co.kr
 DOMAIN-SUFFIX,gate.io
-DOMAIN-SUFFIX,gemini.com
-DOMAIN-SUFFIX,huobi.com
-DOMAIN-SUFFIX,kucoin.com
-DOMAIN-SUFFIX,liquid.com
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okx.com
-DOMAIN-SUFFIX,pancakeswap.finance
-DOMAIN-SUFFIX,poloniex.com
-DOMAIN-SUFFIX,uniswap.org
 
 # Analysis
 DOMAIN-KEYWORD,tradingview
 DOMAIN-SUFFIX,aicoin.com
-DOMAIN-SUFFIX,aimoon.com
 DOMAIN-SUFFIX,coingecko.com
 DOMAIN-SUFFIX,coinmarketcap.com
 DOMAIN-SUFFIX,debank.com
