@@ -1,8 +1,16 @@
+// CHDbits
+DOMAIN-SUFFIX,ptchdbits.co
 DOMAIN-SUFFIX,rainbowisland.co
+DOMAIN-SUFFIX,chdbits.xyz
+// Audiences
+DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,cinefiles.info
+// DiscFan
 DOMAIN-SUFFIX,discfan.net
+// IPTorrents
 DOMAIN-SUFFIX,empirehost.me
 DOMAIN-SUFFIX,stackoverflow.tech
 DOMAIN-SUFFIX,bgp.technology
+// TorrentLeech
 DOMAIN-SUFFIX,torrentleech.org
 DOMAIN-SUFFIX,tleechreload.org
