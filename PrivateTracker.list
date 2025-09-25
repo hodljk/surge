@@ -14,6 +14,10 @@ DOMAIN-SUFFIX,ourbits.club
 DOMAIN-SUFFIX,hdhome.org
 // HDDolby
 DOMAIN-SUFFIX,hddolby.com
+// BTSchool
+DOMAIN-SUFFIX,btschool.club
+// PTTime
+DOMAIN-SUFFIX,pttime.org
 // Audiences
 DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,cinefiles.info
@@ -21,8 +25,6 @@ DOMAIN-SUFFIX,cinefiles.info
 DOMAIN-SUFFIX,hhanclub.top
 // DiscFan
 DOMAIN-SUFFIX,discfan.net
-// PTTime
-DOMAIN-SUFFIX,pttime.org
 // OpenCD
 DOMAIN-SUFFIX,open.cd
 // SoulVoice
