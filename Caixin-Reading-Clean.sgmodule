@@ -1,0 +1,28 @@
+#!name=财新阅读净化·可选功能 v2.2
+#!desc=整合正文广告、AI猜你想问、水印、赠阅标记、问AI、评论角标及收听按钮隐藏。七项功能默认全部启用；编辑参数填1启用、0关闭。无需单独JS文件。基于财新8.6.0(8601)实测规则，2026-09-14。
+#!arguments=hide_ads:1,hide_ai_questions:1,hide_watermark:1,hide_gift_badges:1,hide_ask_ai:1,hide_comment_badge:1,hide_listen:1
+#!arguments-desc=功能开关填写1启用、0关闭。\nhide_ads：正文广告\nhide_ai_questions：正文AI猜你想问\nhide_watermark：正文水印\nhide_gift_badges：赠阅标记（保留分享按钮）\nhide_ask_ai：右上角问AI（也可能影响其他AI伴读入口）\nhide_comment_badge：评论角标数字（保留评论内容）\nhide_listen：隐藏右上角收听\n修改后重新打开文章；问AI需完全退出并重启财新以刷新配置；收听受脚本缓存影响。
+#!requirement=CORE_VERSION>=20
+
+# 参数只控制本模块的重写。MITM主机名仍需启用，不能位于hostname-disabled中。
+# URL开头的h重复上限由参数控制：1匹配http/https，0不匹配正常URL。
+# 启用本模块前停用旧版净化模块、独立测试模块及字体检测模块。
+
+[URL Rewrite]
+^h{0,{{{hide_ads}}}}ttps?://dolphin\.caixin\.com/s\?z=caixin(?:&|$) - reject
+^h{0,{{{hide_ai_questions}}}}ttps?://www\.caixin\.com/ai/question/\d+/\d+\.js(?:\?.*)?$ - reject
+
+[Body Rewrite]
+http-response ^h{0,{{{hide_ads}}}}ttps?://mapps?v5\.caixin\.com/articlev5/\d+/\d+\.html(?:\?.*)?$ </head> "<style id='caixin-clean-ads'>.wall-ads,.pip-ads,.long-ads{display:none!important}</style></head>"
+http-response ^h{0,{{{hide_ai_questions}}}}ttps?://mapps?v5\.caixin\.com/articlev5/\d+/\d+\.html(?:\?.*)?$ </head> "<style id='caixin-clean-ai'>#cx-ai{display:none!important}</style></head>"
+http-response ^h{0,{{{hide_watermark}}}}ttps?://mapps?v5\.caixin\.com/articlev5/\d+/\d+\.html(?:\?.*)?$ </head> "<style id='caixin-clean-watermark'>[id='Symbol(caixin-mark)']{display:none!important}</style></head>"
+http-response ^h{0,{{{hide_gift_badges}}}}ttps?://mapps?v5\.caixin\.com/articlev5/\d+/\d+\.html(?:\?.*)?$ '"red_packet"\s*:\s*"1"' '"red_packet":"0"'
+http-response ^h{0,{{{hide_gift_badges}}}}ttps?://mapps?v5\.caixin\.com/articlev5/\d+/\d+\.html(?:\?.*)?$ 'id="red_packet"\s+name="red_packet"\s+value="1"' 'id="red_packet" name="red_packet" value="0"'
+http-response ^h{0,{{{hide_ask_ai}}}}ttps?://gateway\.caixin\.com/api/app-api/caixinapp/appinfo(?:\?.*)?$ '"isShowAiPairedReading"\s*:\s*"1"' '"isShowAiPairedReading":"0"'
+http-response ^h{0,{{{hide_comment_badge}}}}ttps?://mapiv5\.caixin\.com/ios/article/getArticleComments(?:\?.*)?$ '"comment_count"\s*:\s*"[0-9]+"(\s*\}\s*,\s*"comment_count"\s*:)' '"comment_count":"0"$1'
+
+# 让正文现有原生桥接主动隐藏收听入口，不改音频地址及播放接口。
+http-response ^h{0,{{{hide_listen}}}}ttps?://file\.caixin\.com/pkg/cx-app/(?:content|mini)/assets/index\.js(?:\?.*)?$ 'showVoiceIcon\(\)\{const\s+[^{}]*\{[^{}]*\}return\s+2==this\.audio\.audioStatus\|\|[A-Za-z_$][\w$]*\}' 'showVoiceIcon(){return false}'
+
+[MITM]
+hostname = %APPEND% mappsv5.caixin.com, mappv5.caixin.com, dolphin.caixin.com, www.caixin.com, gateway.caixin.com, mapiv5.caixin.com, file.caixin.com
